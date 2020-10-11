@@ -29,7 +29,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		showConnection();
-		//showData();
+		showData();
 	}
 
 	private void showConnection() throws SQLException {
@@ -39,12 +39,11 @@ public class DemoApplication implements CommandLineRunner {
 		conn.close();
 	}
 
-	/*
 	private void showData() {
 		jdbcTemplate.queryForList("SELECT * FROM FOO")
 				.forEach(row -> log.info(row.toString()));
 	}
 
-	 */
+
 
 }
